@@ -1,0 +1,28 @@
+<plugin
+		id="com.vp.plugin.sample.generatereportcomposer"
+		name="Generate Report Composer"
+		description="Generate Report Composer"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.generatereportcomposer.GenerateReportComposerPlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.generatereportcomposer.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.generatereportcomposer.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.generatereportcomposer.actionset1.BpdsReportAction"
+					actionType="generalAction"
+					label="BPDs Report"
+					tooltip="BPDs Report"
+					style="normal"
+					icon="icons/bpdsReport.png"
+					toolbarPath="com.vp.plugin.sample.generatereportcomposer.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.generatereportcomposer.actions.BpdsReportActionController"/>
+			</action>
+			
+		</actionSet>
+	</actionSets>	
+</plugin>
